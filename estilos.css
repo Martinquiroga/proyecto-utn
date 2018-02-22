@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/*
+-----------------------------------------------
+                CABECERA
+-----------------------------------------------
+*/
+.servicios{
+    width: 100%;
+    height: 69em;
+    background: #c8e0e6;
+    position: relative;
+}
+.servicios h1{
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 20%;
+    color:  rgba(100, 150, 170,0.2);
+    font-size: 10em;
+	font-weight: bolder;
+}
+.servicios p{
+	position: absolute;
+    z-index: 1;
+	top: 45%;
+    left: 20%;
+    color: white;
+	width: 30%;
+	padding-bottom: 25px;
+	border-bottom: solid;
+}
+.servicios img{
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    right: 20%;
+	opacity: 0.8;
+}
+/*
+-----------------------------------------------
+                BOTONERA
+-----------------------------------------------
+*/
+.botonera{
+    background: rgba(0, 0,0, 0.02);
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+
+}
+.botonera .logo{
+	margin-left: 2%;
+	font-weight: bolder;
+	font-size: 1.1em;
+}
+.botonera-lista{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 30%;
+	margin-right: 2%;
+}
+.botonera-lista li{
+    flex-grow: 1;
+    margin-right: 0,5em;
+	margin-left: 20px;
+	border-radius: 20px;
+}
+.botonera-lista a:link{
+    text-align: center;
+    display: block;
+	padding: 8px 20px;
+	border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: dimgray;
+}
+.botonera-lista a:hover{
+	background: linear-gradient( to left, rgba(100, 150, 170,0.2), #c8e0e6);
+	color:white;
+	border: 1.9px solid dimgrey;
+	transition: background 10s;
+
+}
+/*
+-----------------------------------------------
+                INFO PERSONAL
+-----------------------------------------------
+*/
+.sobre-mi{
+    width: 60%;
+	height: 40em;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.sobre-mi h3{
+    font-size: 4em;
+	font-weight: bolder;
+	color: rgba(50,50,50,1.00);
+}
+.sobre-mi img{
+    width: 50px;
+    height: 150px;
+}
+.sobre-mi p{
+    float:right;
+	background: rgba(50,50,50,1.00);
+	color: lightgrey;
+	max-width: 500px;
+	width: 60%;
+	padding: 2em;
+}
+/*
+-----------------------------------------------
+                PORTFOLIO
+-----------------------------------------------
+*/
+.portfolio{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 2em;
+}
+.portfolio article{
+	width: 100%;
+	float: left;
+}
+.portfolio h2{
+	font-size: 4em;
+	font-weight: bolder;
+}
+.portfolio p{
+    float: right;
+    max-width: 400px;
+    font-size: 1em;
+    padding: 8%;
+	background: tomato;
+    
+}
+.portfolio img{
+	float: left;
+	margin-right: 5%;
+}
+/*
+-----------------------------------------------
+                FORMULARIO
+-----------------------------------------------
+*/
+.formulario{
+	clear: both;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 4em;
+	padding-bottom: 6em;
+}
+.form-inline{
+	display: flex;
+	justify-content: space-between;
+}
+button{
+	margin-right: auto;
+	margin-left: auto;
+}
+/*
+-----------------------------------------------
+                    pie
+-----------------------------------------------
+*/
+.pie{
+	padding-top: 3em;
+    background: black;
+	height: 10em;
+}
+.redes-lista{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	
+}
+.redes-lista li{
+	margin-right: 0.8em;
+}
+.redes-lista a{
+    color:darkgrey;
+    display: block;
+    font-weight: bold;
+	text-decoration: none;
+}
+.pie p{
+	display: flex;
+	justify-content: center;
+	color: darkgrey;
+	font-size: 0.8em;
+}
+/*
+-----------------------------------------------
+                    @media
+-----------------------------------------------
+*/
+@media screen and (max-width: 1200px) and (min-width: 780px) {
+
+
+.servicios img{
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    right: 20%;
+	opacity: 0.8;
+	}
+    .servicios{
+    width: 100%;
+    height: 30em;
+    }
+    .servicios h1{
+    font-size: 8em;
+	top: 8%;
+    left: 18%;
+    }
+	.servicios p{
+	top: 30%;
+    left: 18%;
+	width: 40%;
+	}
+	.servicios img{
+	width: 30%;
+    top: 12%;
+    right: 10%;
+	opacity: 0.8;
+}
+	.form-inline{
+	flex-direction: column;
+	}
+}
+@media screen and (max-width: 780px) and (min-width: 480px) {
+    .servicios{
+        width: 100%;
+        height: 30em;
+    }
+    .servicios h1{
+        font-size: 5em;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .servicios{
+        width: 100%;
+        height: 10em;
+    }
+    .servicios h1{
+        font-size: 5em;
+    }
+}
