@@ -56,6 +56,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    z-index:3;
 
 }
 .botonera .logo{
@@ -89,8 +90,6 @@ body{
 	background: linear-gradient( to left, rgba(100, 150, 170,0.2), #c8e0e6);
 	color:white;
 	border: 1.9px solid dimgrey;
-	transition: background 10s;
-
 }
 /*
 -----------------------------------------------
@@ -98,29 +97,47 @@ body{
 -----------------------------------------------
 */
 .sobre-mi{
+    max-width: 1000px;
     width: 60%;
-	height: 40em;
+    height: 60em;
     margin-left: auto;
     margin-right: auto;
 	padding-top: 2em;
-	padding-bottom: 2em;
+    padding-bottom: 2em;
+    position: relative;
+    background-color: aquamarine;
 }
 .sobre-mi h3{
-    font-size: 4em;
+    font-size: 6em;
 	font-weight: bolder;
-	color: rgba(50,50,50,1.00);
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 3;
+    top: 50px;
+    left: 20px;
+}
+.sobre-mi figure{
+    height: 200px;
 }
 .sobre-mi img{
-    width: 50px;
-    height: 150px;
+    width: 250px;
+    height: 320px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 40px;
 }
 .sobre-mi p{
-    float:right;
-	background: rgba(50,50,50,1.00);
+	background: rgba(50, 50, 50, 0.52);
 	color: lightgrey;
 	max-width: 500px;
-	width: 60%;
-	padding: 2em;
+    width: 60%;
+    height: 400px;
+    padding: 4em 2.2em;
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    top: 25em;
 }
 /*
 -----------------------------------------------
@@ -131,7 +148,9 @@ body{
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-	padding-top: 2em;
+    padding-top: 2em;
+    background-color: blanchedalmond;
+    position: relative;
 }
 .portfolio article{
 	width: 100%;
@@ -164,7 +183,8 @@ body{
     margin-left: auto;
     margin-right: auto;
 	padding-top: 4em;
-	padding-bottom: 6em;
+    padding-bottom: 6em;
+    background-color: antiquewhite;
 }
 .form-inline{
 	display: flex;
