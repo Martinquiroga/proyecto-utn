@@ -8,7 +8,8 @@ body{
 }
 h2{
     font-size: 3.6em;
-	font-weight: bolder;
+    font-weight: bolder;
+    text-align: center;
 }
 /*
 -----------------------------------------------
@@ -62,10 +63,17 @@ h2{
     z-index:3;
 
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    padding-right: 10px;
+}
 .botonera .logo{
 	margin-left: 2%;
 	font-weight: bolder;
-    font-size: 1.1em;
+    font-size: 1.0em;
     color: white;
 }
 .botonera-lista{
@@ -89,10 +97,10 @@ h2{
     text-decoration: none;
     color: white;
     border: 2.0px solid white;
+    transition: background, border, 0.4s;
 }
 .botonera-lista a:hover{
 	background: #0b1058;
-	color:white;
     border: 2.0px solid #0b1058;
 }
 /*
@@ -148,12 +156,15 @@ h2{
                 PORTFOLIO
 -----------------------------------------------
 */
+.portfolio {
+    background: #0b1058;
+}
 .contenedor{
     width: 80%;
     height:210;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2em;
+    padding-top: 10em;
     background-color: blanchedalmond;
     overflow: scroll;
     overflow-y: hidden;
@@ -171,25 +182,19 @@ h2{
 -----------------------------------------------
 */
 .formulario{
-	clear: both;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 3em;
-    padding-bottom: 6em;
-    background-color: antiquewhite;
-}
-.formulario h2{
-    text-align: center;
+    padding-top: 8em;
+    padding-bottom: 10em;
+    clear: both;
+    font-family: 'Roboto', sans-serif;
 }
 label{
     visibility: hidden;
 }
 input{
     height: 40px;
-    color: gray;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
 }
 .form-inline{
 	display: flex;
@@ -203,15 +208,17 @@ input{
     flex-basis: 31%;
     height: 2em;
 } 
-.form-control {
+.form-text {
     width: 100%;
-    border: 1px solid rgba(50, 50, 50, 0.52);
+    border: 1px solid rgba(50, 50, 50, 0.288);
     border-radius: 3px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 0.9em;
 }
 .form-message {
     padding: 20px;
-    font-family: 'Roboto', sans-serif;
-	font-size: 0.8em;
 }
 .button{
     display: flex;
@@ -225,7 +232,14 @@ button{
     background-color: rgba(255, 253, 253, 0);
     border: 2.0px solid #0b1058;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.0em;
+    transition: background 0.4s;
+    color: black;
+}
+button:hover{
+    background-color: rgba(19,63,115,1.00);
+    cursor: pointer;
+    color: white;
 }
 /*
 -----------------------------------------------

@@ -11,12 +11,14 @@
     
 	<body>
         <nav class="botonera">
+
                 <figure class="logo">
                     <a href="#">
                         <img src="img/logo-bco.png" alt="Logo" width="60" height="60" id="Logo">
                     </a>
                     Martín Quiroga
                 </figure>
+
                 <ul class="botonera-lista">
                     <li>
                         <a href="#">sobre mi</a>
@@ -28,6 +30,7 @@
                         <a href="#">Contacto</a>
                     </li>
                 </ul>
+                
         </nav> <!--cierra botonera-->
 
 
@@ -61,9 +64,9 @@
 
 
 
-                <div>         
-                    <h2>Portfolio</h2> 
-                </div>
+        <div class="portfolio">         
+            <h2>Portfolio</h2> 
+
             <div class="contenedor">
                 <div class="slider">
                         <h4>Branding</h4>
@@ -101,38 +104,44 @@
                             <img src="img/img1.jpg">
 
                 </div>
-            </div> 
-            <!--cierra portfolio-->
+            </div>
+        </div> <!--Cierra portfolio-->
         
 		<div class="formulario">
             <h2>Envianos tu mensaje</h2>
-			<form class="form-inline">
+			<form class="form-inline" action="#" method="#">
+
 					<div class="form-group">
 						<label for="nombre sr-only">Nombre</label>
-						<input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+						<input type="text" class="form-text" id="nombre" placeholder="Nombre" required>
 					</div>
 
 					<div class="form-group">
 						<label for="email sr-only">Email</label>
-						<input type="text" class="form-control" id="email" placeholder="E-mail" required>
+						<input type="text" class="form-text" id="email" placeholder="E-mail" required>
 					</div>
 
 					<div class="form-group">
 						<label for="asunto sr-only">Asunto </label>
-						<input type="text" class="form-control" id="asunto" placeholder="Asunto" required>
-					</div>
-			</form>
+						<input type="text" class="form-text" id="asunto" placeholder="Asunto" required>
+                    </div>
+                    
+            </form> <!-- Cierra formulario en una línea-->
+            
             <form class="form-message" action="#" method="#">
+
                 <div class="form-group">
-                    <label for="mensaje"></label>
-                    <textarea class="form-control" id="mensaje" rows="9" placeholder="Escriba aquí su mensaje..." required></textarea>
-				</div>
-                <div class="button">
-                    <button type="submit" class="btn btn-primario">¡Enviar mensaje!</button>                
-                    <button type="submit" class="btn btn-primario">Reset</button>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-text" id="mensaje" rows="9" placeholder="Escriba aquí su mensaje..." required></textarea>
                 </div>
+                
+                <div class="button">
+                    <button type="submit">¡Enviar mensaje!</button>                
+                    <button type="submit">Reset</button>
+                </div>
+
             </form>
-		</div>  <!-- cierra formulario-->
+		</div>  <!-- Cierra formulario-->
  
 
         <footer class="pie">
@@ -146,7 +155,8 @@
 					<span style="font-weight: bold;">&copy;MQdiseño</span> - todos los derechos resevados
 				</p>
 			</section>
-        </footer> <!-- cierra footer-->
+        </footer> <!-- Cierra footer-->
+
 
 
 
