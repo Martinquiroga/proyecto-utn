@@ -13,7 +13,7 @@
         <div class="wrapper-nav">
             <nav class="botonera">
                 <figure class="logo">
-                        <img src="img/web-gif.gif" alt="Home" width="120" height="120" id="Logo">
+                        <img src="img/web-gif.gif" alt="Home" id="Logo">
                     Martín Quiroga
                 </figure>
 
@@ -109,41 +109,48 @@
         </div> <!--Cierra portfolio-->
         
         <div class="form-container">
-            <div class="formulario">
-                <h2 id="contacto">Envianos tu mensaje</h2>
-                <form class="form-inline" action="#" method="#">
 
-                        <div class="form-group">
-                            <label for="nombre sr-only">Nombre</label>
-                            <input type="text" class="form-text" id="nombre" placeholder="Nombre" required>
-                        </div>
+                <form class="formulario" action="enviar.php" method="POST">
 
-                        <div class="form-group">
-                            <label for="email sr-only">Email</label>
-                            <input type="text" class="form-text" id="email" placeholder="E-mail" required>
-                        </div>
+                        <h2 id="contacto">
+                            Envianos tu mensaje
+                        </h2>
 
-                        <div class="form-group">
-                            <label for="asunto sr-only">Asunto </label>
-                            <input type="text" class="form-text" id="asunto" placeholder="Asunto" required>
-                        </div>
+                        <div class="form-inline">
+
+                            <div class="form-group">
+                                <label for="nombre sr-only">Nombre</label>
+                                <input type="text" name="nombre" class="form-text" id="nombre" placeholder="Nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email sr-only">Email</label>
+                                <input type="text" name="email" class="form-text" id="email" placeholder="E-mail" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto sr-only">Asunto </label>
+                                <input type="text" name="asunto" class="form-text" id="asunto" placeholder="Asunto" required>
+                            </div>
+
+                        </div>  <!-- Cierra formulario en una línea-->
                         
-                </form> <!-- Cierra formulario en una línea-->
-                
-                <form class="form-message" action="#" method="#">
 
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea class="form-text" id="mensaje" rows="9" placeholder="Escriba aquí su mensaje..." required></textarea>
-                    </div>
-                    
-                    <div class="button">
-                        <button type="submit">¡Enviar mensaje!</button>                
-                        <button type="submit">Reset</button>
-                    </div>
+                        <div class="form-message">
 
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-text" id="mensaje" rows="9" placeholder="Escriba aquí su mensaje..." name="mensaje" required></textarea>
+                            </div>
+                            
+                            <div class="button">
+                                <button type="submit">¡Enviar mensaje!</button>                
+                                <button type="submit">Reset</button>
+                            </div>
+
+                        </div>
                 </form>
-            </div>
+
         </div> <!-- Cierra formulario-->
  
 
