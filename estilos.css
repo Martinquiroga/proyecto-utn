@@ -11,45 +11,48 @@ h2{
     font-weight: bolder;
     text-align: center;
 }
+.contenido{
+    background: gray;
+    max-width: 1250px;
+    width: 100%;
+    margin:auto;
+}
 /*
 -----------------------------------------------
                 BOTONERA
 -----------------------------------------------
 */
-.wrapper-nav{
+header{
     position: absolute;
     width: 100%;
+    background: #0b1058;
 }
 .botonera{
-    width: 70%;
+    background: #287188;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
-    height: 5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index:3;
 }
 .logo {
+    background: white;
     display: flex;
     align-items: center;
-    margin-left: 40%;
+    font-weight: bolder;
+    font-size: 1.0em;
+    color: dimgrey;
 }
 .logo img{
     margin-right: 10px;
 }
-.botonera .logo{
-	margin-left: 2%;
-	font-weight: bolder;
-    font-size: 1.0em;
-    color: dimgrey;
-}
-.botonera-lista{
+.botonera-lista ul{
+    background: red;
     list-style-type: none;
     display: flex;
-    width: 35%;
-	margin-right: 2%;
+    width: 100%;
 }
 .botonera-lista li{
     flex-grow: 1;
@@ -83,24 +86,34 @@ h2{
     height: 60em;
     background: url(img/prueba-1-01.jpg) no-repeat center center;
     background-size: cover;
+    background-color: white; 
 }
-.servicios h1{
+.header-texto{
+    width: 38%;
+    height: 100%;
     position: absolute;
-    z-index: 1;
-    top: 20%;
-    left: 16.5%;
+    top: 0;
+    left: 330px;
+    right: 0;
+    border: 1px solid green;
+}
+.texto {
+    position: relative;
+    top: 300px;
+    background: red;
+}
+.texto h1{
     color:  rgba(95, 141, 182, 0.658);
     font-size: 6em;
 	font-weight: bolder;
 }
-.servicios p{
-	position: absolute;
-    z-index: 1;
-	top: 40%;
-    left: 20%;
+.texto p{
     color: gray;
-	width: 25%;
-	padding-left: 25px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 80px;
+    padding-left: 25px;
+
 	border-left: 2px solid;
 }
 .servicios img{
@@ -290,18 +303,16 @@ button:hover{
 @media screen and (max-width: 1600px) {
     .formulario{
         background: red;
+    }
 }
+
 @media screen and (max-width: 1450px) {
-    .botonera-lista{
-        width: 50%;
+    .botonera-lista ul{
         margin-right: 0%;
     }
-    .servicios h1{
-        font-size: 5em;
-    }
-    .servicios p{
-        font-size: 0.9em;
-    }
+
+
+
     .sobre-mi p{
         right: 0px;
         top: 28em;
@@ -314,6 +325,7 @@ button:hover{
         background: green;
     }
 }
+
 @media screen and (max-width: 1000px) {
     h2{
         font-size: 3em;
@@ -321,47 +333,28 @@ button:hover{
     .botonera{
         width: 90%;
     }
-    .botonera-lista{
-        width: 50%;
+    .botonera-lista ul{
         margin-right: 0%;
-    }
-    .servicios h1{
-        position: absolute;
-        z-index: 1;
-        top: 20%;
-        left: 16.5%;
-        font-size: 4em;
-    }
-    .servicios p{
-        top: 35%;
-        color: gray;
-        width: 40%;
-        padding-left: 25px;
-    }
-    .servicios img{
-        right: 1%;
-        width: 40%;
-        height: 40%;
     }
     .formulario{
         background: gray;}
 }
 @media screen and (max-width: 770px) {
     .botonera{
-        width: 100%;
+        width: 95%;
+        display: block;
     }
-    .botonera-lista{
-        width: 60%;
-        margin-right: 0%;
+    .logo {
+        width: 35%;
+        margin: auto;
+        font-size: 0.7em;
     }
-    .servicios p{
+    .botonera-lista a{
         font-size: 0.8em;
     }
-    .servicios img{
-        top: 30%;
-        width: 37%;
-        height: 30%;
-    }
+
+
+
     .formulario{
         background: pink;
         width: 70%;
@@ -380,28 +373,12 @@ button:hover{
     h2{
         font-size: 2em;
     }
-    .botonera{
-        display: block;
-        height: 4em;
+    .botonera-lista a{
+        font-size: 0.7em;
     }
-    .servicios h1{
-        position: relative;
-        top: 30%;
-        left: 16.5%;
-        font-size: 3em;
-    }
-    .servicios p{
-        position: relative;
-        top: 30px;
-        width: 300px;
-    }
-    .servicios img{
-        position: relative;
-        top: 10%;
-        margin: auto;
-        width: 60%;
-        height: 40%;
-    }
+
+
+
     .formulario{
         width: 90%;
         background: skyblue;
