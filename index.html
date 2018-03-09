@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
         <title>MQ diseño</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-		<link href="estilos.css" rel="stylesheet">
+		<link href="css/estilos.css" rel="stylesheet">
         <link href="img/favico.ico" rel="icon">
    		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     </head>
@@ -13,7 +13,7 @@
         <header class="wrapper-nav">
             <div class="botonera">
                 <figure class="logo">
-                        <img src="img/logo.png" alt="Home" id="Logo">
+                        <img src="images/logo.png" alt="Home" id="Logo">
                     Martín Quiroga
                 </figure>
 
@@ -33,26 +33,24 @@
             </div> <!--cierra botonera-->
         </header>
 
-        <div class="contenido">
+        <section>
+            <figure class="servicios"></figure>
 
-            <section>
-                <figure class="servicios"></figure>
-                <div class="header-texto">
-                    <div class="texto">
-                        <h1>
-                            Diseño gráfico
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                        </p>
-                    </div>
+            <div class="header-texto">
+                <div class="texto">
+                    <h1>Diseño gráfico</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                    </p>
                 </div>
-                <figure>
-                        <img src="img/ilustracion-01.png" alt="Diseñográfico" width="512" height="512">
-                </figure>
-            </section><!--cierra cabecera-->
-            
+            </div>
 
+            <div class="header_img">
+                <img src="images/dg.png" alt="Diseño gráfico">
+            </div>
+        </section><!--cierra cabecera-->
+        
+        <div class="contenido">
             <main id="sobre-mi" class="sobre-mi">
                 <figure>
                     <img src="#">
@@ -71,8 +69,6 @@
 
 
 
-
-
             <div id="portfolio" class="portfolio">         
                 <h2>Portfolio</h2> 
 
@@ -80,42 +76,46 @@
                     <div class="slider">
                             <h4>Branding</h4>
 
-                                <img src="img/img-01.jpg" width="320" alt="logo-uñas">
+                                <img src="images/img-01.jpg" width="320" alt="logo-uñas">
 
-                                <img src="img/img2-01.jpg" width="320" alt="logo-diariosur">
+                                <img src="images/img2-01.jpg" width="320" alt="logo-diariosur">
 
-                                <img src="img/img3-01.jpg" width="320" alt="logo-autopista">
+                                <img src="images/img3-01.jpg" width="320" alt="logo-autopista">
 
-                                <img src="img/img4-01.jpg" width="320" alt="logo-parqueacuático">
+                                <img src="images/img4-01.jpg" width="320" alt="logo-parqueacuático">
 
-                                <img src="img/img5-01.jpg" width="320" alt="logo-cementerio">
+                                <img src="images/img5-01.jpg" width="320" alt="logo-cementerio">
                     </div>
-            </div>
-            </div>
-            <div class="contenedor">
-                    <div class="slider">
+                </div>
+            
+                <div class="contenedor">
+                        <div class="slider">
                             <h4>Editorial</h4>
 
-                                <img src="img/imgeditorial3-01.jpg" width="320" alt="pressbook-lolapalooza">
+                                <img src="images/imgeditorial3-01.jpg" width="320" alt="pressbook-lolapalooza">
 
-                                <img src="img/imgeditorial-01.jpg" width="320" alt="libro-artist adigital David Szauder">
+                                <img src="images/imgeditorial-01.jpg" width="320" alt="libro-artist adigital David Szauder">
 
-                                <img src="img/imgeditorial2-01.jpg" width="320" alt="Diario-pucalhue">
+                                <img src="images/imgeditorial2-01.jpg" width="320" alt="Diario-pucalhue">
 
-                    </div>
-            </div>
-            <div class="contenedor">
-                    <div class="slider">
+                        </div>
+                </div>
+
+                <div class="contenedor">
+                        <div class="slider">
                             <h4>Audiovisual</h4>
 
-                                <img src="img/imgvideo.gif" width="380" alt="exe canal de música video">
+                                <img src="images/imgvideo.gif" width="380" alt="exe canal de música video">
 
-                                <img src="img/imgvideo.gif" width="380" alt="exe canal de música video">
+                                <img src="images/imgvideo.gif" width="380" alt="exe canal de música video">
 
-                                <img src="img/imgvideo.gif" width="380" alt="exe canal de música video">
-                    </div>
-                </div> <!--Cierra portfolio-->
-            
+                                <img src="images/imgvideo.gif" width="380" alt="exe canal de música video">
+                        </div>
+                </div> 
+            </div> <!--Cierra portfolio-->
+
+        </div><!-- cierra container-->
+
             <div class="form-container">
 
                     <form class="formulario" action="enviar.php" method="POST">
@@ -158,9 +158,7 @@
 
                             </div>
                     </form>
-
             </div> <!-- Cierra formulario-->
-    
 
             <footer class="pie">
                 <section>
@@ -176,7 +174,7 @@
             </footer> <!-- Cierra footer-->
 
 
-        </div><!-- cierra container-->
+
         <!--DANGER ZONE. No pasar de acá-->
 </body>
 </html>
