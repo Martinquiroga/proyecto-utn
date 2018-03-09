@@ -23,13 +23,13 @@ h2{
 -----------------------------------------------
 */
 header{
+    /*background: #0b1058;*/
     position: absolute;
     width: 100%;
-    background: #0b1058;
     z-index: 2;
 }
 .botonera{
-    background: #287188;
+    /*background: #287188;*/
     max-width: 1250px;
     width: 65%;
     margin-left: auto;
@@ -40,7 +40,7 @@ header{
     position: relative;
 }
 .logo {
-    background: white;
+    /*background: white;*/
     display: flex;
     align-items: center;
     font-weight: bolder;
@@ -51,7 +51,7 @@ header{
     margin-right: 10px;
 }
 .botonera-lista ul{
-    background: red;
+    /*background: red;*/
     list-style-type: none;
     display: flex;
     width: 100%;
@@ -91,42 +91,46 @@ header{
     background-size: cover; 
 }
 .header-texto{
+    /*border: 1px solid green;*/
     width: 38%;
-    height: 100%;
-    position: absolute;
+    height: 850px;
+    position: relative;
     top: 0;
     left: 330px;
     right: 0;
-    border: 1px solid green;
+    bottom: 0px;
+    float: left;
 }
 .texto {
+    /*background: red;*/
     position: relative;
-    top: 300px;
-    background: red;
+    top: 250px;
 }
 .texto h1{
     color:  rgba(95, 141, 182, 0.658);
     font-size: 6em;
+    font-family: 'Roboto', sans-serif;
 	font-weight: bolder;
 }
 .texto p{
     color: gray;
     max-width: 500px;
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: 80px;
     margin-right: 80px;
     padding-left: 25px;
 
 	border-left: 2px solid;
 }
 .header_img{
-    background: pink;
+    /*background: pink;*/
     max-width: 512px;
     max-height: 512px;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 20%;
-    right: 15%;
+    top: 150px;
+    right: 300px;
+    float: right;
 }
 
 /*
@@ -134,47 +138,58 @@ header{
                 INFO PERSONAL
 -----------------------------------------------
 */
+main{
+    background: blue;
+    height: 100vh;
+}
 .sobre-mi{
-    max-width: 1250px;
-    width: 78%;
-    height: 60em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10em;
+    border:1px solid red;
+    width: 50%;
+    height: 100%;
+    float: left;
     position: relative;
 }
-.sobre-mi h3{
+.quiensoy{
+    border: 1px solid orange;
+    margin-top: 100px;
+    padding-left: 20%;
+    overflow: auto;
+}
+.quiensoy h3{
     font-size: 5em;
 	font-weight: bolder;
-    color: rgb(0, 0, 0);
-    position: relative;
-    z-index: 3;
-    top: 120px;
-    left: 20px;
-}
-.sobre-mi figure{
-    height: 200px;
-}
-.sobre-mi img{
-    width: 350px;
-    height: 480px;
+    color: rgb(250, 250, 250);
     position: absolute;
     z-index: 1;
-    top: 40px;
-    left: 40px;
+    top: 500px;
 }
-.sobre-mi p{
-	background: linear-gradient(45deg, #22215a, #287188); ;
-	color: lightgrey;
-	max-width: 500px;
-    width: 60%;
-    height: 400px;
-    padding: 4em 2.2em;
-    position: absolute;
-    z-index: 2;
-    right: 160px;
-    top: 25em;
+.habilidades{
+    border: 1px solid #ffffff;
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 0px 0px;
 }
+.info-habilidades{
+    border: 1px solid orange;
+    width: 500px;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.info-habilidades p{
+    max-width: 500px;
+	background: linear-gradient(45deg, #22215a, #287188);
+    color: lightgrey;
+    font-size: 0.9em;
+    padding: 3em 2.2em;
+}
+.info-habilidades h4 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 23px;
+  }
 /*
 -----------------------------------------------
                 PORTFOLIO
