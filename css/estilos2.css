@@ -194,6 +194,10 @@ main{
                 PORTFOLIO
 -----------------------------------------------
 */
+.portfolio{
+    background: chocolate;
+    text-align: center;
+}
 .contenedor{
     width: 80%;
     height:210;
@@ -451,7 +455,10 @@ button:hover{
         margin-right: 0%;
     }
     .servicios{
-        height: 800px;
+        height: 900px;
+    }
+    .header_img{
+        margin-top: 80px;
     }
     .formulario{
         background: gray;}
@@ -468,9 +475,6 @@ button:hover{
     }
     .botonera-lista a{
         font-size: 0.8em;
-    }
-    .servicios{
-        height: 100vh;
     }
     .formulario{
         background: pink;
@@ -499,7 +503,7 @@ button:hover{
     .header_img{
             max-width: 200px;
             max-height: 200px;
-            margin-top: 15vh;
+            margin-top: 150px;
         }
     .formulario{
         width: 90%;

@@ -274,4 +274,7 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     right: 10px;
   }
+  .flex-control-paging li a {
+    display: none;
+  }
 }
