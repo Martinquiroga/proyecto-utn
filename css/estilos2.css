@@ -23,13 +23,13 @@ h2{
 -----------------------------------------------
 */
 header{
-    /*background: #0b1058;*/
+    background: #0b1058;
     position: absolute;
     width: 100%;
     z-index: 2;
 }
 .botonera{
-    /*background: #287188;*/
+    background: #287188;
     max-width: 1250px;
     width: 65%;
     margin-left: auto;
@@ -40,7 +40,7 @@ header{
     position: relative;
 }
 .logo {
-    /*background: white;*/
+    background: white;
     display: flex;
     align-items: center;
     font-weight: bolder;
@@ -51,7 +51,7 @@ header{
     margin-right: 10px;
 }
 .botonera-lista ul{
-    /*background: red;*/
+    background: red;
     list-style-type: none;
     display: flex;
     width: 100%;
@@ -80,7 +80,7 @@ header{
 
 /*
 -----------------------------------------------
-                CABECERA
+                CABECERA:SERVICIOS
 -----------------------------------------------
 */
 .servicios{
@@ -91,8 +91,8 @@ header{
     background-size: cover; 
 }
 .header-texto{
-    /*border: 1px solid green;*/
-    width: 38%;
+    border: 1px solid green;
+    width: 35%;
     height: 850px;
     position: relative;
     top: 0;
@@ -102,13 +102,13 @@ header{
     float: left;
 }
 .texto {
-    /*background: red;*/
+    background: red;
     position: relative;
     top: 250px;
 }
 .texto h1{
     color:  rgba(95, 141, 182, 0.658);
-    font-size: 6em;
+    font-size: 5em;
     font-family: 'Roboto', sans-serif;
 	font-weight: bolder;
 }
@@ -119,11 +119,10 @@ header{
     margin-left: 80px;
     margin-right: 80px;
     padding-left: 25px;
-
 	border-left: 2px solid;
 }
 .header_img{
-    /*background: pink;*/
+    background: pink;
     max-width: 512px;
     max-height: 512px;
     position: relative;
@@ -319,8 +318,43 @@ button:hover{
                     @media
 -----------------------------------------------
 */
-
+@media screen and (max-width: 1700px){
+    .header-texto{
+        left: 280px;
+    }
+    .header_img{
+        max-width: 450px;
+        max-height: 450px;
+        top: 200px;
+        right: 230px;
+    }
+    .formulario{
+        background: mediumvioletred;
+    }
+}
 @media screen and (max-width: 1600px) {
+    .header-texto{
+        left: 270px;
+        width: 30%;
+    }
+    .texto {
+        top: 270px;
+    }
+    .texto h1{
+        font-size: 4em;
+    }
+    .texto p{
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 0px;
+        padding-left: 15px;
+        font-size: 0.9em;
+    }
+    .header_img{
+        max-width: 400px;
+        max-height: 400px;
+        right: 270px;
+    }
     .formulario{
         background: red;
     }
@@ -330,9 +364,19 @@ button:hover{
     .botonera-lista ul{
         margin-right: 0%;
     }
-
-
-
+    .header-texto{
+        left: 210px;
+        width: 35%;
+    }
+    .texto {
+        top: 300px;
+    }
+    .header_img{
+        max-width: 300px;
+        max-height: 300px;
+        top: 250px;
+        right: 210px;
+    }
     .sobre-mi p{
         right: 0px;
         top: 28em;
@@ -341,8 +385,58 @@ button:hover{
         width: 280px;
         height: 380px;
     }
+    .form-container{
+        width: 100%;
+        background: url(../images/fondo-form2-01.png) no-repeat center center;
+        background-size: cover;
+    }
     .formulario{
         background: green;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-texto{
+        width: 60%;
+        min-width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        float: none;
+    }
+    .texto {
+        background: red;
+        position: relative;
+        top: 0px;
+        text-align: center;
+    }
+    .texto p{
+        color: gray;
+        text-align: center;
+        max-width: 500px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        border-left: 0px;
+    }
+    .header_img{
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        margin: auto;
+        margin-top: 20vh;
+        top:0px;
+        right:0px;
+        float: none;
+        z-index: 2;
+    }
+
+    .formulario{
+        background: salmon;
     }
 }
 
@@ -355,6 +449,9 @@ button:hover{
     }
     .botonera-lista ul{
         margin-right: 0%;
+    }
+    .servicios{
+        height: 800px;
     }
     .formulario{
         background: gray;}
@@ -372,9 +469,9 @@ button:hover{
     .botonera-lista a{
         font-size: 0.8em;
     }
-
-
-
+    .servicios{
+        height: 100vh;
+    }
     .formulario{
         background: pink;
         width: 70%;
@@ -396,13 +493,16 @@ button:hover{
     .botonera-lista a{
         font-size: 0.7em;
     }
-    .header_img{
-        display: block;
+    .texto h1{
+        font-size: 2.4em;
     }
-
-
+    .header_img{
+            max-width: 200px;
+            max-height: 200px;
+            margin-top: 15vh;
+        }
     .formulario{
         width: 90%;
         background: skyblue;
-}
+    }
 }
