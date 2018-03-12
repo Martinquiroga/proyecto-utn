@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h2{
     font-size: 3.6em;
@@ -249,6 +249,7 @@ main{
 -----------------------------------------------
 */
 .form-container{
+    margin-top: 100px;
     width: 100%;
     background: url(../images/fondo-form-01.png) no-repeat center center;
     background-size: cover; 
