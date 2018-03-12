@@ -12,7 +12,7 @@ h2{
     text-align: center;
 }
 .contenido{
-    background: gray;
+    /*background: gray;*/
     max-width: 1250px;
     width: 100%;
     margin:auto;
@@ -23,13 +23,13 @@ h2{
 -----------------------------------------------
 */
 header{
-    background: #0b1058;
+    /*background: #0b1058;*/
     position: absolute;
     width: 100%;
     z-index: 2;
 }
 .botonera{
-    background: #287188;
+    /*background: #287188;*/
     max-width: 1250px;
     width: 65%;
     margin-left: auto;
@@ -40,7 +40,7 @@ header{
     position: relative;
 }
 .logo {
-    background: white;
+    /*background: white;*/
     display: flex;
     align-items: center;
     font-weight: bolder;
@@ -51,7 +51,7 @@ header{
     margin-right: 10px;
 }
 .botonera-lista ul{
-    background: red;
+    /*background: red;*/
     list-style-type: none;
     display: flex;
     width: 100%;
@@ -91,7 +91,7 @@ header{
     background-size: cover; 
 }
 .header-texto{
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     width: 35%;
     height: 850px;
     position: relative;
@@ -102,7 +102,7 @@ header{
     float: left;
 }
 .texto {
-    background: red;
+    /*background: red;*/
     position: relative;
     top: 250px;
 }
@@ -122,7 +122,7 @@ header{
 	border-left: 2px solid;
 }
 .header_img{
-    background: pink;
+    /*background: pink;*/
     max-width: 512px;
     max-height: 512px;
     position: relative;
@@ -138,40 +138,40 @@ header{
 -----------------------------------------------
 */
 main{
-    background: blue;
-    height: 100vh;
+    /*background: blue;*/
+    height: 130vh;
 }
 .sobre-mi{
-    border:1px solid red;
+    /*border:1px solid red;*/
     width: 50%;
     height: 100%;
     float: left;
     position: relative;
 }
 .quiensoy{
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     margin-top: 100px;
     padding-left: 20%;
-    overflow: auto;
 }
 .quiensoy h3{
     font-size: 5em;
 	font-weight: bolder;
-    color: rgb(250, 250, 250);
+    color: lightsteelblue;
     position: absolute;
     z-index: 1;
     top: 500px;
 }
 .habilidades{
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     float: right;
     width: 50%;
     height: 100%;
     padding: 0px 0px;
 }
 .info-habilidades{
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     width: 500px;
+    height: 1000px;
     margin-top: 200px;
     margin-right: auto;
     margin-left: auto;
@@ -184,19 +184,48 @@ main{
     padding: 3em 2.2em;
 }
 .info-habilidades h4 {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+.info-programas {
+    /*background: burlywood;*/
+    margin-top: 15px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-habilidades a{
+    clear: both;
+    max-width: 200px;
+    margin: auto;
     margin-top: 40px;
     text-align: center;
-    font-weight: 600;
-    font-size: 23px;
-  }
+    display: block;
+	padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: dimgray;
+    border: 2.0px solid dimgray;
+    transition: background, 0.4s;
+}
+.info-habilidades a:hover{
+    background: #0b1058;
+    border: 2.0px solid #0b1058;
+    color: white;
+}
 /*
 -----------------------------------------------
                 PORTFOLIO
 -----------------------------------------------
 */
 .portfolio{
-    background: chocolate;
+    /*background: chocolate;*/
     text-align: center;
+    padding-top: 6em;
 }
 .contenedor{
     width: 80%;
@@ -225,7 +254,7 @@ main{
     background-size: cover; 
 }
 .formulario{
-    background: blue;
+    /*background: blue;*/
     width: 45%;
     margin-left: auto;
     margin-right: auto;
@@ -293,8 +322,8 @@ button:hover{
 */
 .pie{
 	padding-top: 3em;
+    height: 10em;
     background: black;
-	height: 10em;
 }
 .redes-lista{
 	list-style-type: none;
@@ -333,7 +362,7 @@ button:hover{
         right: 230px;
     }
     .formulario{
-        background: mediumvioletred;
+        /*background: mediumvioletred;*/
     }
 }
 @media screen and (max-width: 1600px) {
@@ -360,7 +389,7 @@ button:hover{
         right: 270px;
     }
     .formulario{
-        background: red;
+        /*background: red;*/
     }
 }
 
@@ -389,13 +418,18 @@ button:hover{
         width: 280px;
         height: 380px;
     }
+    .quiensoy h3{
+        font-size: 4em;
+        top: 400px;
+    }
+
     .form-container{
         width: 100%;
         background: url(../images/fondo-form2-01.png) no-repeat center center;
         background-size: cover;
     }
     .formulario{
-        background: green;
+        /*background: green;*/
     }
 }
 @media screen and (max-width: 1200px) {
@@ -412,7 +446,6 @@ button:hover{
         float: none;
     }
     .texto {
-        background: red;
         position: relative;
         top: 0px;
         text-align: center;
@@ -438,13 +471,12 @@ button:hover{
         float: none;
         z-index: 2;
     }
-
     .formulario{
-        background: salmon;
+        /*background: salmon;*/
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     h2{
         font-size: 3em;
     }
@@ -460,8 +492,39 @@ button:hover{
     .header_img{
         margin-top: 80px;
     }
+    main{
+        height: 1300px;
+    }
+    .sobre-mi{
+        width: 100%;
+        height: 35%;
+        float: none;
+    }
+    .quiensoy{
+        width: 282px;
+        margin-top: 20px;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .quiensoy h3{
+        top: 300px;
+    }
+    .habilidades{
+        float: none;
+        width: 100%;
+        height: 65%;
+    }
+    .info-habilidades{
+        width: 500px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .formulario{
-        background: gray;}
+        /*background: gray;*/
+        width: 60%;
+    }
 }
 @media screen and (max-width: 770px) {
     .botonera{
@@ -477,7 +540,7 @@ button:hover{
         font-size: 0.8em;
     }
     .formulario{
-        background: pink;
+        /*background: pink;*/
         width: 70%;
     }
     .form-inline{
@@ -504,9 +567,28 @@ button:hover{
             max-width: 200px;
             max-height: 200px;
             margin-top: 150px;
-        }
+    }
+    .quiensoy h3 {
+        font-size: 3.5em;
+    }
+    .info-habilidades {
+        width: 350px;
+    }
+    .info-habilidades p{
+        font-size: 0.8em;
+    }
+    .info-habilidades h4{
+        font-size: 1.2em;
+    }
+    .info-programas{
+        width: 320px;
+    }
+    .info-programas img{
+        max-width: 100px;
+        margin-left: 2px;
+    }
     .formulario{
+        /*background: skyblue;*/
         width: 90%;
-        background: skyblue;
     }
 }
