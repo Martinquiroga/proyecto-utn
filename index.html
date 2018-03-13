@@ -247,7 +247,7 @@
 
             <div class="form-container">
 
-                    <form class="formulario" action="enviar.php" method="POST">
+                    <form class="formulario" action="enviar.php#contacto" method="POST">
 
                             <h2 id="contacto">
                                 Enviame tu mensaje
