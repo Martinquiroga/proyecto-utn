@@ -4,10 +4,8 @@
 		<meta charset="utf-8">
         <title>MQ diseño</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
         <!--Enlazamos la hoja de estilos del flexslider -->
         <link href="css/flexslider.css" rel="stylesheet">
-
 		<link href="css/estilos2.css" rel="stylesheet">
         <link rel="icon" href="objetos/favico.ico" type="image/x-icon">
    		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -41,7 +39,7 @@
 
         <section>
             <div class="servicios">
-                <div class="flexslider">
+                <div class="flexslider flexslider1">
                     <ul class="slides">
 
                         <li>
@@ -134,50 +132,77 @@
                 <h2>Portfolio</h2>
                 <p>Muestra de trabajos por categoría</p>
 
-                <div class="contenedor">
-                    <div class="slider">
-                        <h4>Branding</h4>
-
-                            <img src="images/img-01.jpg" width="400" alt="logo-uñas">
-
-                            <img src="images/img1-01.jpg" width="400" alt="logo-censo">
-
-                            <img src="images/img2-01.jpg" width="400" alt="logo-diariosur">
-
-                            <img src="images/img3-01.jpg" width="400" alt="logo-autopista">
-
-                            <img src="images/img4-01.jpg" width="400" alt="logo-parqueacuático">
-
-                            <img src="images/img5-01.jpg" width="400" alt="logo-cementerio">
+                <div class="flexslider flexslider2">
+                    <h4>Branding</h4>
+                    <ul class="slides">
+                        <li>
+                            <img src="images/img-01.jpg" alt="logo-uñas">
+                            <h5>Isotipo the cuties nails</h5>
+                        </li>
+                        <li>
+                            <img src="images/img1-01.jpg" alt="logo-censo">
+                            <h5>Isotipo censo universitario 2018</h5>
+                        </li>
+                        <li>
+                            <img src="images/img2-01.jpg" alt="logo-diariosur">
+                            <h5>Isotipo diario fútbol sur</h5>
+                        </li>
+                        <li>
+                            <img src="images/img3-01.jpg" alt="logo-autopista">
+                            <h5>Isotipo AUSA</h5>
+                        </li>
+                        <li>
+                            <img src="images/img4-01.jpg" alt="logo-parqueacuático">
+                            <h5>Logotipo Aquópolis</h5>
+                        </li>
+                        <li>
+                            <img src="images/img5-01.jpg" alt="logo-cementerio">
+                            <h5>Logotipo cementerio privado</h5>
+                        </li>
+                            
                     </div>
                 </div>
             
-                <div class="contenedor">
-                    <div class="slider">
+                <div class="flexslider flexslider2">
+                    <div class="slides">
                         <h4>Editorial</h4>
-
-                            <img src="images/imgeditorial5-01.jpg" width="400" alt="Tesis guerra de Malvinas">
-
-                            <img src="images/imgeditorial3-01.jpg" width="400" alt="pressbook-lolapalooza">
-
-                            <img src="images/imgeditorial-01.jpg" width="400" alt="libro-artista digital David Szauder">
-
-                            <img src="images/imgeditorial2-01.jpg" width="400" alt="Diario-pucalhue">
-
-                            <img src="images/imgeditorial4-01.jpg" width="400" alt="pressbook-el día de la bestia">
-
+                        <li>
+                            <img src="images/imgeditorial5-01.jpg" alt="Tesis guerra de Malvinas">
+                            <h5>Tesis la guerra de Malvinas</h5>
+                        </li>
+                        <li>
+                            <img src="images/imgeditorial3-01.jpg" alt="pressbook-lolapalooza">
+                            <h5>Pressbook lollapalooza</h5>
+                        </li>
+                        <li>
+                            <img src="images/imgeditorial-01.jpg" alt="libro-artista digital David Szauder">
+                            <h5>Libro artista digital</h5>
+                        </li>
+                        <li>
+                            <img src="images/imgeditorial2-01.jpg" alt="Diario-pucalhue">
+                            <h5>Diario Pucalhue</h5>
+                        </li> 
+                        <li>
+                            <img src="images/imgeditorial4-01.jpg" alt="pressbook-el día de la bestia">
+                            <h5>Pressbook el día de la bestia</h5>
+                        </li> 
                     </div>
                 </div>
 
-                <div class="contenedor">
-                    <div class="slider">
-                        <h4>Audiovisual</h4>
-
-                            <img src="images/imgvideo.gif" width="380" alt="exe canal de música video">
-
-                            <img src="images/imgvideo.gif" width="380" alt="exe canal de música video">
-
-                            <img src="images/imgvideo.gif" width="380" alt="exe canal de música video">
+                <div class="flexslider flexslider2">
+                    <h4>Audiovisual</h4>
+                    <div class="slides">
+                        <li>
+                            <img src="images/imgvideo.gif" alt="exe canal de música video">
+                            <h5>Canal de música exe</h5>
+                        </li>
+                        <li>
+                            <img src="images/imgvideo.gif" alt="exe canal de música video">
+                        </li>
+                        <li>
+                            <img src="images/imgvideo.gif" alt="exe canal de música video">
+                        </li>
+                            
                     </div>
                 </div> 
         </div> <!--Cierra portfolio-->
@@ -252,10 +277,20 @@
             //activamos el slider
             $(window).load(function() {
             $('.flexslider').flexslider({
-            animation: "vertical" 
+                animation: "vertical" 
             });
-            });
+        });
+        $(window).load(function() {
+  $('.flexslider2').flexslider({
+    animation: "slide",
+    itemWidth: 400,
+    itemMargin: 5,
+    minItems: 2,
+    maxItems: 4
+  });
+});
         </script>
+
         
         <!--DANGER ZONE. No pasar de acá-->
 </body>

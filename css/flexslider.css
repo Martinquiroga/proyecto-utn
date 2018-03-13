@@ -41,11 +41,17 @@
  * BASE STYLES
  * ====================================================================================================================*/
 .flexslider {
-  position: absolute;
-  height: 93vh; 
+  position: absolute; 
   z-index:1;
   margin: 0;
   padding: 0;
+}
+.flexslider2 {
+  margin-top: 100px;
+  height: 400px;
+}
+.flexslider1{
+  height: 93vh;
 }
 .flexslider .slides > li {
   display: none;

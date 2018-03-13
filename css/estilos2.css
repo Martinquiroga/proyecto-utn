@@ -225,23 +225,7 @@ main{
 .portfolio{
     /*background: chocolate;*/
     text-align: center;
-    padding-top: 6em;
-}
-.contenedor{
-    width: 80%;
-    height:210;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10em;
-    overflow: scroll;
-    overflow-y: hidden;
-    padding-bottom: 40px;
-}
-.slider{
-    width: 4000px;
-}
-.slider img{
-    margin-left:20px; 
+    padding-top: 0px;
 }
 /*
 -----------------------------------------------
@@ -423,7 +407,9 @@ button:hover{
         font-size: 4em;
         top: 400px;
     }
-
+    .portfolio{
+        padding-top: 40px;
+    }
     .form-container{
         width: 100%;
         background: url(../images/fondo-form2-01.png) no-repeat center center;
