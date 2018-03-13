@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 3.6em;
+    font-weight: bolder;
+    text-align: center;
+}
+.contenido{
+    /*background: gray;*/
+    max-width: 1250px;
+    width: 100%;
+    margin:auto;
+}
+/*
+-----------------------------------------------
+                BOTONERA
+-----------------------------------------------
+*/
+header{
+    /*background: #0b1058;*/
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.botonera{
+    /*background: #287188;*/
+    max-width: 1250px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    /*background: white;*/
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.0em;
+    color: dimgrey;
+}
+.logo img{
+    margin-right: 10px;
+}
+.botonera-lista ul{
+    /*background: red;*/
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
+.botonera-lista li{
+    flex-grow: 1;
+    margin-right: 0,5em;
+	margin-left: 20px;
+	border-radius: 20px;
+}
+.botonera-lista a{
+    text-align: center;
+    display: block;
+	padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: dimgray;
+    transition: background, 0.4s;
+}
+.botonera-lista a:hover{
+    background: #0b1058;
+    color: white;
+}
+
+/*
+-----------------------------------------------
+                CABECERA:SERVICIOS
+-----------------------------------------------
+*/
+.servicios{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/fondohead.jpg) no-repeat center center;
+    background-size: cover; 
+}
+.header-texto{
+    /*border: 1px solid green;*/
+    width: 35%;
+    height: 850px;
+    position: relative;
+    top: 0;
+    left: 330px;
+    right: 0;
+    bottom: 0px;
+    float: left;
+}
+.texto {
+    /*background: red;*/
+    position: relative;
+    top: 250px;
+}
+.texto h1{
+    color:  rgba(95, 141, 182, 0.658);
+    font-size: 5em;
+    font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+}
+.texto p{
+    color: gray;
+    max-width: 500px;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 25px;
+	border-left: 2px solid;
+}
+.header_img{
+    /*background: pink;*/
+    max-width: 512px;
+    max-height: 512px;
+    position: relative;
+    z-index: 2;
+    top: 150px;
+    right: 300px;
+    float: right;
+}
+
+/*
+-----------------------------------------------
+                INFO PERSONAL
+-----------------------------------------------
+*/
+main{
+    /*background: blue;*/
+    height: 130vh;
+}
+.sobre-mi{
+    /*border:1px solid red;*/
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.quiensoy{
+    /*border: 1px solid orange;*/
+    margin-top: 100px;
+    padding-left: 20%;
+}
+.quiensoy h3{
+    font-size: 5em;
+	font-weight: bolder;
+    color: lightsteelblue;
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+}
+.habilidades{
+    /*border: 1px solid #ffffff;*/
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 0px 0px;
+}
+.info-habilidades{
+    /*border: 1px solid orange;*/
+    width: 500px;
+    height: 1000px;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.info-habilidades p{
+    max-width: 500px;
+	background: linear-gradient(45deg, #22215a, #287188);
+    color: whitesmoke;
+    font-size: 0.9em;
+    font-weight: 0;
+    padding: 3em 2.2em;
+}
+.info-habilidades h4 {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+.info-programas {
+    /*background: burlywood;*/
+    margin-top: 15px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-habilidades a{
+    clear: both;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    display: block;
+	padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: dimgray;
+    border: 2.0px solid dimgray;
+    transition: background, 0.4s;
+}
+.info-habilidades a:hover{
+    background: #0b1058;
+    border: 2.0px solid #0b1058;
+    color: white;
+}
+/*
+-----------------------------------------------
+                PORTFOLIO
+-----------------------------------------------
+*/
+.portfolio{
+    /*background: chocolate;*/
+    text-align: center;
+    padding-top: 0px;
+}
+.sliderimg{
+    margin-top: 100px;
+}
+.sliderimg h4{
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+.slides h5{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.slides a{
+    clear: both;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+	padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: dimgray;
+    border: 2.0px solid dimgray;
+    transition: background, 0.4s;
+}
+.slides a:hover{
+    background: #0b1058;
+    border: 2.0px solid #0b1058;
+    color: white;
+}
+/*
+-----------------------------------------------
+                FORMULARIO
+-----------------------------------------------
+*/
+.form-container{
+    margin-top: 100px;
+    width: 100%;
+    background: url(../images/fondo-form-01.png) no-repeat center center;
+    background-size: cover; 
+}
+.formulario{
+    /*background: blue;*/
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8em;
+    padding-bottom: 10em;
+    clear: both;
+    font-family: 'Roboto', sans-serif;
+}
+label{
+    visibility: hidden;
+}
+input{
+    height: 40px;
+}
+.form-inline{
+	display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form-inline .form-group{
+    flex-basis: 31%;
+    height: 2em;
+} 
+.form-text {
+    width: 100%;
+    border: 1px solid rgba(50, 50, 50, 0.288);
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 0.9em;
+}
+.form-message {
+    padding: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 4px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 253, 253, 0);
+    border: 2.0px solid dimgray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0em;
+    transition: background 0.4s;
+    color: dimgray;
+}
+button:hover{
+    background-color: rgba(19,63,115,1.00);
+    border: 2.0px solid rgba(19,63,115,1.00);
+    cursor: pointer;
+    color: white;
+}
+/*
+-----------------------------------------------
+                    pie
+-----------------------------------------------
+*/
+.pie{
+	padding-top: 3em;
+    height: 10em;
+    background: black;
+}
+.redes-lista{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	
+}
+.redes-lista li{
+	margin-right: 0.8em;
+}
+.redes-lista a{
+    color:darkgrey;
+    display: block;
+    font-weight: bold;
+	text-decoration: none;
+}
+.pie p{
+	display: flex;
+	justify-content: center;
+	color: darkgrey;
+	font-size: 0.8em;
+}
+/*
+-----------------------------------------------
+                    @media
+-----------------------------------------------
+*/
+@media screen and (max-width: 1700px){
+    .header-texto{
+        left: 280px;
+    }
+    .header_img{
+        max-width: 450px;
+        max-height: 450px;
+        top: 200px;
+        right: 230px;
+    }
+    .formulario{
+        /*background: mediumvioletred;*/
+    }
+}
+@media screen and (max-width: 1600px) {
+    .header-texto{
+        left: 270px;
+        width: 30%;
+    }
+    .texto {
+        top: 270px;
+    }
+    .texto h1{
+        font-size: 4em;
+    }
+    .texto p{
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 0px;
+        padding-left: 15px;
+        font-size: 0.9em;
+    }
+    .header_img{
+        max-width: 400px;
+        max-height: 400px;
+        right: 270px;
+    }
+    .formulario{
+        /*background: red;*/
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .botonera-lista ul{
+        margin-right: 0%;
+    }
+    .header-texto{
+        left: 210px;
+        width: 35%;
+    }
+    .texto {
+        top: 300px;
+    }
+    .header_img{
+        max-width: 300px;
+        max-height: 300px;
+        top: 250px;
+        right: 210px;
+    }
+    main{
+        height: 1100px;
+        width: 80%;
+        margin: auto;
+    }
+    .sobre-mi img{
+        width: 280px;
+        height: 380px;
+    }
+    .quiensoy h3{
+        font-size: 4em;
+        top: 400px;
+    }
+    .info-habilidades{
+        width: 400px;
+    }
+    .info-programas{
+        width: 320px;
+    }
+    .info-programas img{
+        /*background: burlywood;*/
+        margin-top: 15px;
+        width: 100px;
+    }
+    .portfolio{
+        padding-top: 40px;
+    }
+    .form-container{
+        width: 100%;
+        background: url(../images/fondo-form2-01.png) no-repeat center center;
+        background-size: cover;
+    }
+    .formulario{
+        /*background: green;*/
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-texto{
+        width: 60%;
+        min-width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        float: none;
+    }
+    .texto {
+        position: relative;
+        top: 0px;
+        text-align: center;
+    }
+    .texto p{
+        color: gray;
+        text-align: center;
+        max-width: 500px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        border-left: 0px;
+    }
+    .header_img{
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        margin: auto;
+        margin-top: 20vh;
+        top:0px;
+        right:0px;
+        float: none;
+        z-index: 2;
+    }
+    .formulario{
+        /*background: salmon;*/
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h2{
+        font-size: 3em;
+    }
+    .botonera{
+        width: 90%;
+    }
+    .botonera-lista ul{
+        margin-right: 0%;
+    }
+    .servicios{
+        height: 900px;
+    }
+    .header_img{
+        margin-top: 80px;
+    }
+    main{
+        height: 1300px;
+    }
+    .sobre-mi{
+        width: 100%;
+        height: 35%;
+        float: none;
+    }
+    .quiensoy{
+        width: 282px;
+        margin-top: 20px;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .quiensoy h3{
+        top: 300px;
+    }
+    .habilidades{
+        float: none;
+        width: 100%;
+        height: 65%;
+    }
+    .info-habilidades{
+        width: 500px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .formulario{
+        /*background: gray;*/
+        width: 60%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .botonera{
+        width: 95%;
+        display: block;
+    }
+    .logo {
+        width: 35%;
+        margin: auto;
+        font-size: 0.7em;
+    }
+    .botonera-lista a{
+        font-size: 0.8em;
+    }
+    .formulario{
+        /*background: pink;*/
+        width: 70%;
+    }
+    .form-inline{
+            flex-direction: column;
+            padding-bottom: 0px;
+    }
+    button{
+        font-size: 0.8em;
+        padding: 3px 10px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 550px) {
+    h2{
+        font-size: 2em;
+    }
+    .botonera-lista a{
+        font-size: 0.7em;
+    }
+    .texto h1{
+        font-size: 2.4em;
+    }
+    .header_img{
+            max-width: 200px;
+            max-height: 200px;
+            margin-top: 150px;
+    }
+    .quiensoy h3 {
+        font-size: 3.5em;
+    }
+    .info-habilidades {
+        width: 350px;
+    }
+    .info-habilidades p{
+        font-size: 0.8em;
+    }
+    .info-habilidades h4{
+        font-size: 1.2em;
+    }
+    .info-programas{
+        width: 320px;
+    }
+    .info-programas img{
+        max-width: 100px;
+        margin-left: 2px;
+    }
+    .formulario{
+        /*background: skyblue;*/
+        width: 90%;
+    }
+}
