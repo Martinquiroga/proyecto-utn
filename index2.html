@@ -8,7 +8,17 @@
         <link href="css/flexslider.css" rel="stylesheet">
 		<link href="css/estilos2.css" rel="stylesheet">
         <link rel="icon" href="objetos/favico.ico" type="image/x-icon">
-   		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <script src="js/scrollreveal.min.js"></script>
+        <script>
+            window.sr = ScrollReveal();
+            if (sr.isSupported()) {
+            document.documentElement.classList.add('sr');
+            }
+        </script>
+         <style>
+            .sr .fooReveal { visibility: hidden; }
+          </style>
     </head>
     
 
@@ -49,8 +59,8 @@
                                 <img src="images/dg.png" alt="Diseño gráfico">
                             </div>
 
-                            <div class="header-texto">
-                                <div class="texto">
+                            <div class="header-texto fooContainer">
+                                <div class="texto fooReveal">
                                     <h1>Diseño gráfico</h1>
                                         <p>
                                             Los problemas de diseños son muy variados. Por mi parte me especializo en Branding e identidad corporativa, 
@@ -97,8 +107,8 @@
                     </div>
                 </div>
 
-                <div class="habilidades">
-                    <div class="info-habilidades">
+                <div class="habilidades fooContainer">
+                    <div class="info-habilidades fooReveal">
                         <p>
                             ¡¡Hola!! Mi nombre es Martín Quiroga Licenciado en Diseño y Comunicación Visual de Universidad Nacional de Lanús. 
                             Mis habilidades en torno al diseño por orientación de la carrera están relacionadas hacia lo editorial. 
@@ -109,7 +119,7 @@
                         </p>
 
                         <h4>¿Qué herramientas utilizo para hacer mis trabajos?</h4>
-                        <div class="info-programas">
+                        <div class="info-programas fooReveal">
                             
                             <img src="images/illustrator.png" alt="illustrator">
                             <img src="images/photoshop.png" alt="photoshop">
@@ -158,40 +168,41 @@
                         <li>
                             <img src="images/img5-01.jpg" alt="logo-cementerio">
                             <h5>Logotipo cementerio privado</h5>
-                        </li>
-                            
-                    </div>
+                        </li> 
+                    </ul>
                 </div>
             
                 <div class="flexslider flexslider2">
-                    <div class="slides">
-                        <h4>Editorial</h4>
-                        <li>
-                            <img src="images/imgeditorial5-01.jpg" alt="Tesis guerra de Malvinas">
-                            <h5>Tesis la guerra de Malvinas</h5>
-                        </li>
-                        <li>
-                            <img src="images/imgeditorial3-01.jpg" alt="pressbook-lolapalooza">
-                            <h5>Pressbook lollapalooza</h5>
-                        </li>
-                        <li>
-                            <img src="images/imgeditorial-01.jpg" alt="libro-artista digital David Szauder">
-                            <h5>Libro artista digital</h5>
-                        </li>
-                        <li>
-                            <img src="images/imgeditorial2-01.jpg" alt="Diario-pucalhue">
-                            <h5>Diario Pucalhue</h5>
-                        </li> 
-                        <li>
-                            <img src="images/imgeditorial4-01.jpg" alt="pressbook-el día de la bestia">
-                            <h5>Pressbook el día de la bestia</h5>
-                        </li> 
+                    <div class="sliderimg">
+                        <ul class="slides">
+                            <h4>Editorial</h4>
+                            <li>
+                                <img src="images/imgeditorial5-01.jpg" alt="Tesis guerra de Malvinas">
+                                <h5>Tesis la guerra de Malvinas</h5>
+                            </li>
+                            <li>
+                                <img src="images/imgeditorial3-01.jpg" alt="pressbook-lolapalooza">
+                                <h5>Pressbook lollapalooza</h5>
+                            </li>
+                            <li>
+                                <img src="images/imgeditorial-01.jpg" alt="libro-artista digital David Szauder">
+                                <h5>Libro artista digital</h5>
+                            </li>
+                            <li>
+                                <img src="images/imgeditorial2-01.jpg" alt="Diario-pucalhue">
+                                <h5>Diario Pucalhue</h5>
+                            </li> 
+                            <li>
+                                <img src="images/imgeditorial4-01.jpg" alt="pressbook-el día de la bestia">
+                                <h5>Pressbook el día de la bestia</h5>
+                            </li> 
+                        </ul>
                     </div>
                 </div>
 
                 <div class="flexslider flexslider2">
                     <h4>Audiovisual</h4>
-                    <div class="slides">
+                    <ul class="slides">
                         <li>
                             <img src="images/imgvideo.gif" alt="exe canal de música video">
                             <h5>Canal de música exe</h5>
@@ -203,7 +214,7 @@
                             <img src="images/imgvideo.gif" alt="exe canal de música video">
                         </li>
                             
-                    </div>
+                    </ul>
                 </div> 
         </div> <!--Cierra portfolio-->
 
@@ -279,19 +290,21 @@
             $('.flexslider').flexslider({
                 animation: "vertical" 
             });
+            $('.flexslider2').flexslider({
+            animation: "slide",
+            itemWidth: 400,
+            itemMargin: 5,
+            minItems: 2,
+            maxItems: 4
+            });
         });
-        $(window).load(function() {
-  $('.flexslider2').flexslider({
-    animation: "slide",
-    itemWidth: 400,
-    itemMargin: 5,
-    minItems: 2,
-    maxItems: 4
-  });
-});
+        </script>
+        <!--scrollreveal-->
+        <script>
+            sr.reveal('.fooReveal', { container: '.fooContainer' });
+            sr.reveal('.fooReveal', { duration: 1000 }, 200);
         </script>
 
-        
         <!--DANGER ZONE. No pasar de acá-->
 </body>
 </html>
