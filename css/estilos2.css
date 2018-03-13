@@ -428,9 +428,10 @@ button:hover{
         top: 250px;
         right: 210px;
     }
-    .sobre-mi p{
-        right: 0px;
-        top: 28em;
+    main{
+        height: 1100px;
+        width: 80%;
+        margin: auto;
     }
     .sobre-mi img{
         width: 280px;
@@ -439,6 +440,17 @@ button:hover{
     .quiensoy h3{
         font-size: 4em;
         top: 400px;
+    }
+    .info-habilidades{
+        width: 400px;
+    }
+    .info-programas{
+        width: 320px;
+    }
+    .info-programas img{
+        /*background: burlywood;*/
+        margin-top: 15px;
+        width: 100px;
     }
     .portfolio{
         padding-top: 40px;
