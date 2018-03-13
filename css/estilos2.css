@@ -179,8 +179,9 @@ main{
 .info-habilidades p{
     max-width: 500px;
 	background: linear-gradient(45deg, #22215a, #287188);
-    color: lightgrey;
+    color: whitesmoke;
     font-size: 0.9em;
+    font-weight: 0;
     padding: 3em 2.2em;
 }
 .info-habilidades h4 {
@@ -226,6 +227,38 @@ main{
     /*background: chocolate;*/
     text-align: center;
     padding-top: 0px;
+}
+.sliderimg{
+    margin-top: 150px;
+}
+.sliderimg h4{
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+.slides h5{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.slides a{
+    clear: both;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+	padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: dimgray;
+    border: 2.0px solid dimgray;
+    transition: background, 0.4s;
+}
+.slides a:hover{
+    background: #0b1058;
+    border: 2.0px solid #0b1058;
+    color: white;
 }
 /*
 -----------------------------------------------
