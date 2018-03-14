@@ -14,7 +14,7 @@ h2{
 .contenido{
     /*background: gray;*/
     max-width: 1250px;
-    width: 100%;
+    width: 90%;
     margin:auto;
 }
 /*
@@ -85,10 +85,11 @@ header{
 */
 .servicios{
     position: relative;
-    width: 100%;
+    width: 99%;
     height: 100vh;
+    margin: auto;
     background: url(../images/fondohead.jpg) no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
 }
 .header-texto{
     /*border: 1px solid green;*/
@@ -138,7 +139,7 @@ header{
 -----------------------------------------------
 */
 main{
-    /*background: blue;*/
+    background: blue;
     height: 130vh;
 }
 .sobre-mi{
@@ -430,15 +431,18 @@ button:hover{
     }
     main{
         height: 1100px;
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
     .sobre-mi img{
         width: 280px;
         height: 380px;
     }
+    .quiensoy{
+        padding-left: 5%;
+    }
     .quiensoy h3{
-        font-size: 4em;
+        font-size: 3.8em;
         top: 400px;
     }
     .info-habilidades{
@@ -461,7 +465,7 @@ button:hover{
         background-size: cover;
     }
     .formulario{
-        /*background: green;*/
+        background: green;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -504,7 +508,7 @@ button:hover{
         z-index: 2;
     }
     .formulario{
-        /*background: salmon;*/
+        background: salmon;
     }
 }
 
@@ -554,7 +558,7 @@ button:hover{
         margin-left: auto;
     }
     .formulario{
-        /*background: gray;*/
+        background: gray;
         width: 60%;
     }
 }
@@ -589,6 +593,9 @@ button:hover{
     h2{
         font-size: 2em;
     }
+    .contenido{
+        width: 98%;
+    }
     .botonera-lista a{
         font-size: 0.7em;
     }
@@ -599,6 +606,11 @@ button:hover{
             max-width: 200px;
             max-height: 200px;
             margin-top: 150px;
+    }
+    main{
+        background: blue;
+        height: 1400px;
+        width: 100%;
     }
     .quiensoy h3 {
         font-size: 3.5em;
@@ -618,6 +630,19 @@ button:hover{
     .info-programas img{
         max-width: 100px;
         margin-left: 2px;
+    }
+    .slides h5{
+        font-size: 0.8em;
+    }
+    .slides a{
+        padding: 4px 5px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-decoration: none;
+        color: dimgray;
+        border: 2.0px solid dimgray;
+        transition: background, 0.4s;
     }
     .formulario{
         /*background: skyblue;*/
