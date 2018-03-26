@@ -9,16 +9,6 @@
 		<link href="css/estilos.css" rel="stylesheet">
         <link rel="icon" href="objetos/favico2.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <script src="js/scrollreveal.min.js"></script>
-        <script>
-            window.sr = ScrollReveal();
-            if (sr.isSupported()) {
-            document.documentElement.classList.add('sr');
-            }
-        </script>
-         <style>
-            .sr .fooReveal { visibility: hidden; }
-          </style>
     </head>
     
 
@@ -59,7 +49,7 @@
                                 <img src="images/dg.png" alt="Diseño gráfico">
                             </div>
 
-                            <div class="header-texto fooReveal">
+                            <div class="header-texto">
                                 <div class="texto">
                                     <h1>Diseño gráfico</h1>
                                         <p>
@@ -107,8 +97,8 @@
                     </div>
                 </div>
 
-                <div class="habilidades fooContainer">
-                    <div class="info-habilidades fooReveal">
+                <div class="habilidades">
+                    <div class="info-habilidades">
                         <p>
                             ¡¡Hola!! Mi nombre es Martín Quiroga <strong>Licenciado en Diseño y Comunicación Visual de la Universidad Nacional de Lanús.</strong> 
                             Mis habilidades en torno al diseño por orientación de la carrera están relacionadas hacia el plano editorial. 
@@ -119,7 +109,7 @@
                         </p>
 
                         <h4>¿Qué herramientas utilizo para hacer mis trabajos?</h4>
-                        <div class="info-programas fooReveal">
+                        <div class="info-programas">
                             
                             <img src="images/illustrator.png" alt="illustrator">
                             <img src="images/photoshop.png" alt="photoshop">
@@ -322,11 +312,6 @@
             maxItems: 4
             });
         });
-        </script>
-        <!--scrollreveal-->
-        <script>
-            sr.reveal('.fooReveal', { container: '.fooContainer' });
-            sr.reveal('.fooReveal', { duration: 1000 }, 200);
         </script>
 
         <!--DANGER ZONE. No pasar de acá-->
